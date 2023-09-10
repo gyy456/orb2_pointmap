@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o   -L/opt/ros/noetic/lib  -Wl,-rpath,/opt/ros/noetic/lib:/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/gtest/lib ../lib/libgtest.so -lpthread 
