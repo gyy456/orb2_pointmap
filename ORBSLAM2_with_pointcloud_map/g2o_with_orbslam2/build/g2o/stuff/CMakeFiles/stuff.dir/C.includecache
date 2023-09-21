@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/g2o_with_orbslam2/g2o/stuff/os_specific.c
+os_specific.h
+/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/g2o_with_orbslam2/g2o/stuff/os_specific.h
+
+/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/g2o_with_orbslam2/g2o/stuff/os_specific.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+sys/time.h
+-
+sys/time.h
+-
+

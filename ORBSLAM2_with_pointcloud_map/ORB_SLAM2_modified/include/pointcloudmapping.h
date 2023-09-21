@@ -46,6 +46,7 @@ protected:
     PointCloud::Ptr generatePointCloud(KeyFrame* kf, cv::Mat& color, cv::Mat& depth);
     
     PointCloud::Ptr globalMap;
+    PointCloud::Ptr p;
     shared_ptr<thread>  viewerThread;   
     
     bool    shutDownFlag    =false;

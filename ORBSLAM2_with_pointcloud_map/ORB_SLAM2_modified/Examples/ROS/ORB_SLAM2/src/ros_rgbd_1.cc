@@ -29,30 +29,40 @@
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
-
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+#include <pcl/io/pcd_io.h>
+#include <pcl/visualization/cloud_viewer.h>
+#include<pcl/visualization/pcl_visualizer.h>
+#include <pcl_conversions/pcl_conversions.h>
+#include<pcl/filters/voxel_grid.h>
+#include<pcl/filters/passthrough.h>
 #include<opencv2/core/core.hpp>
-
+#include <std_msgs/Int16.h>
 #include"../../../include/System.h"
 
 using namespace std;
-
+ros::Publisher pub_pointcloud;
+// ros::Publisher id_pub;
+// std_msgs::Int16 tt;
 class ImageGrabber
 {
 public:
     ImageGrabber(ORB_SLAM2::System* pSLAM):mpSLAM(pSLAM){}
-
+    
     void GrabRGBD_1(const sensor_msgs::ImageConstPtr& msgRGB,const sensor_msgs::ImageConstPtr& msgD);
 
     ORB_SLAM2::System* mpSLAM;
     bool do_rectify;
     cv::Mat M1l,M2l,M1r,M2r;
+    pcl::PointCloud<pcl::PointXYZRGBA> ::Ptr outputMap;
 };
 
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "RGBD_1");
     ros::start();
-
+    // tt.data=1
     if(argc != 3)
     {
         cerr << endl << "Usage: rosrun ORB_SLAM2 RGBD path_to_vocabulary path_to_settings" << endl;        
@@ -66,7 +76,8 @@ int main(int argc, char **argv)
     ImageGrabber igb_1(&SLAM_1);
 
     ros::NodeHandle nh;
-
+    pub_pointcloud= nh.advertise<sensor_msgs::PointCloud2> ("/jackal1/PointCloudOutput", 10);
+    // id_pub= nh.advertise<std_msgs::Int16> ("/jackal1/key_id", 10);
     message_filters::Subscriber<sensor_msgs::Image> rgb_sub(nh, "/jackal1/front/image_raw", 1);
     message_filters::Subscriber<sensor_msgs::Image> depth_sub(nh, "/jackal1/front/depth/image_raw", 1);
     typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, sensor_msgs::Image> sync_pol_1;
@@ -85,6 +96,25 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+
+void pointcloudpublish(pcl::PointCloud<pcl::PointXYZRGBA> inputMap )
+ { 
+	//pcl::PointCloud<pcl::PointXYZ> cloud; 	
+    // std::vector<int> mapping;
+    // pcl::removeNaNFromPointCloud(inputMap,inputMap, mapping);
+	sensor_msgs::PointCloud2 output1;   //声明的输出的点云的格式
+	//pcl::toPCLPointCloud2(*p,p2); //转换到 PCLPointCloud2 类型
+	//pcl_conversions::fromPCL(p2, output);    //转换到 ros 下的格式
+    // if(inputMap.width!=0)
+	//     {pcl::io::savePCDFile ("/home/gyy/Downloads/orb_map/test2.pcd", inputMap);}  
+	toROSMsg(inputMap,output1);
+	output1.header.stamp=ros::Time::now();
+	output1.header.frame_id  ="jackal1/base_link";
+	pub_pointcloud.publish(output1);
+    // id_pub.publish(tt);
+ }
+
 
 void ImageGrabber::GrabRGBD_1(const sensor_msgs::ImageConstPtr& msgRGB,const sensor_msgs::ImageConstPtr& msgD)
 {
@@ -112,6 +142,9 @@ void ImageGrabber::GrabRGBD_1(const sensor_msgs::ImageConstPtr& msgRGB,const sen
     }
 
     mpSLAM->TrackRGBD(cv_ptrRGB->image,cv_ptrD->image,cv_ptrRGB->header.stamp.toSec());
+    mpSLAM->getPointCloudMap(outputMap);
+    pointcloudpublish(*outputMap);
+    // tt.data=tt.data+1
 }
 
 

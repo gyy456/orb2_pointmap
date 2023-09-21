@@ -34,6 +34,7 @@ find_package(OpenCV 3.4.5 REQUIRED)
 find_package(Eigen3 3.2.1 REQUIRED)
 find_package(Boost COMPONENTS system)
 find_package(Pangolin REQUIRED)
+find_package( G2O REQUIRED )
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
@@ -42,6 +43,7 @@ ${PROJECT_SOURCE_DIR}/../../../
 ${PROJECT_SOURCE_DIR}/../../../include
 ${Boost_INCLUDE_DIRS}
 ${Pangolin_INCLUDE_DIRS}
+${PROJECT_SOURCE_DIR}/../../../../g2o_with_orbslam2
 )
 
 set(LIBS 
@@ -49,6 +51,7 @@ ${OpenCV_LIBS}
 ${EIGEN3_LIBS}
 ${Pangolin_LIBRARIES}
 ${PROJECT_SOURCE_DIR}/../../../Thirdparty/DBoW2/lib/libDBoW2.so
+g2o_core g2o_types_slam3d g2o_solver_csparse g2o_stuff g2o_csparse_extension g2o_types_sim3 g2o_types_sba
 ${PROJECT_SOURCE_DIR}/../../../Thirdparty/g2o/lib/libg2o.so
 ${PROJECT_SOURCE_DIR}/../../../lib/libORB_SLAM2.so
 ${PCL_LIBRARIES}
@@ -76,3 +79,24 @@ ${LIBS}
 target_link_libraries(RGBD_1
 ${LIBS}
 )
+# rosbuild_add_executable(pose_server2d
+# src/pose_estimation_2d2d.cpp
+# )
+# target_link_libraries(pose_server2d
+# ${LIBS}
+# )
+rosbuild_add_executable(pose_server3d
+src/pose3d3d.cpp
+)
+target_link_libraries(pose_server3d
+${LIBS}
+)
+
+rosbuild_add_executable(cloud_fusion
+src/icp.cpp
+)
+target_link_libraries(cloud_fusion
+${LIBS}
+)
+
+

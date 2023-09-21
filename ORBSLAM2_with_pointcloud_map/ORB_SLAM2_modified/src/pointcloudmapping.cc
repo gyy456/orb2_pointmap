@@ -22,13 +22,13 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <pcl/visualization/cloud_viewer.h>
 #include "Converter.h"
-
+#include "cmath"
 PointCloudMapping::PointCloudMapping(double resolution_)
 {
     this->resolution = resolution_;
     voxel.setLeafSize( resolution, resolution, resolution);
     globalMap = boost::make_shared< PointCloud >( );
-    
+    p = boost::make_shared< PointCloud >( );  //gyy的修改
     viewerThread = make_shared<thread>( bind(&PointCloudMapping::viewer, this ) );
 }
 
@@ -112,14 +112,34 @@ void PointCloudMapping::viewer()
         }
         
         for ( size_t i=lastKeyframeSize; i<N ; i++ )
-        {
-            PointCloud::Ptr p = generatePointCloud( keyframes[i], colorImgs[i], depthImgs[i] );
+        {   
+            p = generatePointCloud( keyframes[i], colorImgs[i], depthImgs[i] );
+            // if(i==1)
+            // {   pcl::PointCloud<pcl::PointXYZRGBA> ::Ptr cloud;
+            //     cloud=p;
+            //     cloud->height=1;
+            //     cloud->width=36594;
+            //     std::vector<int> mapping;
+            //     pcl::removeNaNFromPointCloud(*cloud, *cloud, mapping);
+            //     // cout<<a<<endl;
+            //     pcl::io::savePCDFile ("/home/gyy/Downloads/pcd_data/rot2est1.pcd",*cloud);
+            // }
+            // if(i==2)
+            // {   pcl::PointCloud<pcl::PointXYZRGBA> ::Ptr cloud;
+            //     cloud=p;
+            //     cloud->height=1;
+            //     cloud->width=36594;
+            //     std::vector<int> mapping;
+            //     pcl::removeNaNFromPointCloud(*cloud,*cloud, mapping);
+            //     pcl::io::savePCDFile ("/home/gyy/Downloads/pcd_data/rot2test2.pcd",*cloud);
+            // }
             *globalMap += *p;
         }
-	viewer.showCloud( globalMap );
+	    viewer.showCloud( globalMap );
         PointCloud::Ptr tmp(new PointCloud());
         voxel.setInputCloud( globalMap );
         voxel.filter( *tmp );
+        
         //globalMap->swap( *tmp );
  
         cout<<"show global map, size="<<globalMap->points.size()<<endl;
@@ -130,5 +150,8 @@ void PointCloudMapping::viewer()
 void PointCloudMapping::getGlobalCloudMap(pcl::PointCloud<pcl::PointXYZRGBA> ::Ptr &outputMap)
 {
 	   unique_lock<mutex> lck_keyframeUpdated( keyFrameUpdateMutex );   
-	   outputMap= globalMap;
+
+       std::vector<int> mapping;
+       outputMap=p;
+       pcl::removeNaNFromPointCloud(*outputMap,*outputMap, mapping);
 }

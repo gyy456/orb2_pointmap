@@ -54,6 +54,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/openni2"
   "../../../.."
   "../../../../include"
+  "../../../../../g2o_with_orbslam2"
   "/usr/local/include/opencv"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
