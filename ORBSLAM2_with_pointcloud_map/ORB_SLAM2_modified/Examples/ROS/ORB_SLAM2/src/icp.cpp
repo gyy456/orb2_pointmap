@@ -21,6 +21,7 @@
 
 using namespace std;
 int t=1;
+int m=1;
 pcl::visualization::PCLVisualizer viewer;
 int start_fusion=0;
 // void keyboardEventOccurred (const pcl::visualization::KeyboardEvent& event, void* nothing)
@@ -79,7 +80,7 @@ void icp_function(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud_source,
                   const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud_target,
                   Eigen::Matrix4d transformation_matrix_raw)
 {
-    int iterations = 1;
+    int iterations = 10;
     // int id_key=id->data;
 
     // std::string s = std::to_string(id_key);
@@ -88,14 +89,14 @@ void icp_function(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud_source,
 
     // ICP 算法
     pcl::IterativeClosestPoint<pcl::PointXYZRGB, pcl::PointXYZRGB> icp;
-    icp.setMaximumIterations (iterations);
+    icp.setMaximumIterations (5);
+    // icp.setMaxCorrespondenceDistance(0.2);
     icp.setTransformationEpsilon(1e-10);
     icp.setEuclideanFitnessEpsilon(1e-8); 
     //icp.setMaximumIterations(1);
     icp.setInputSource(cloud_source);
     icp.setInputTarget(cloud_target);
-    icp.align(*cloud_source);
-    icp.setMaximumIterations(1); 
+    icp.align(*cloud_source); 
     if (icp.hasConverged ())
     {
         std::cout << "\nICP has converged, score is " << icp.getFitnessScore () << std::endl;
@@ -110,8 +111,8 @@ void icp_function(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud_source,
         std::cerr << "\nICP has not converged." << std::endl;
     }
 
-    t=t+1;
-    std::string s = std::to_string(t);
+    m=m+1;
+    std::string s = std::to_string(m);
     // white,c2
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZRGB> white(cloud_target, 250, 250, 250);
     viewer.addPointCloud<pcl::PointXYZRGB> (cloud_target, white, "cloud_target"+s);
@@ -128,7 +129,7 @@ void icp_function(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud_source,
         // ;
 
         // if you pressed "space"
-        if (t<20)
+        while (t<10)
         {   t=t+1;
             icp.align (*cloud_source);
 
@@ -148,6 +149,9 @@ void icp_function(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud_source,
             {
                 std::cerr << "\nICP has not converged.\n" << std::endl;
             }
+        }
+        if(t==10){
+            t=1;
         }
 
     
@@ -189,7 +193,22 @@ void  icp_fusion(const sensor_msgs:: PointCloud2ConstPtr& ros_pcd1,const sensor_
     // pcl_conversions::toPCL(*ros_pcd1, *cloud_source);
     pcl::fromROSMsg(*ros_pcd1,*cloud_source);
     // pcl::io::loadPCDFile<pcl::PointXYZRGB>(name_1, *cloud_source);
+        cout<<cloud_source->points.size();
+    // cout<<"\n"<<cloud_source->height;
+    // cout<<"\n"<<cloud_source->width;
+    for (int i=1;i<cloud_source->points.size();)
+    {
+        if (cloud_source->points[i].y>0.05)
+        {
+            cloud_source->erase(cloud_source->begin()+i);
+            // cloud_source->removeIndices(i);
+        }
+        else
+        {i=i+1;
+        }
+        
 
+    }
     // Defining a rotation matrix and translation vector
     Eigen::Matrix4d transformation_matrix = Eigen::Matrix4d::Identity ();
 
@@ -221,8 +240,17 @@ void  icp_fusion(const sensor_msgs:: PointCloud2ConstPtr& ros_pcd1,const sensor_
     // {
     //     down_sample(cloud_target,cloud_target);
     // }
-
-
+       for (int i=1;i<cloud_target->points.size();)
+       {
+        if (cloud_target->points[i].y>0.05)
+        {
+            cloud_target->erase(cloud_target->begin()+i);
+            // cloud_source->removeIndices(i);
+        }
+        else
+        {i=i+1;
+        }
+       }
     // Executing the transformation
     pcl::transformPointCloud (*cloud_source, *cloud_tmp, transformation_matrix);
     // std::string name_2 = "/home/gyy/Downloads/pcd_data/rot2test2.pcd" ;
@@ -244,7 +272,7 @@ void  icp_fusion(const sensor_msgs:: PointCloud2ConstPtr& ros_pcd1,const sensor_
     // // red,c1
     // pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZRGB> green (cloud_target, 0, 250, 0);
     // viewer.addPointCloud (cloud_target, green, "cloud_target");
-    if(start_fusion==1){
+    // if(start_fusion==1){
     pcl::PointCloud<pcl::PointXYZRGB> input_trans;
 	  pcl::transformPointCloud(*cloud_source, input_trans, transformation_matrix);
 	  std::vector<int> nn_indices ;
@@ -269,5 +297,5 @@ void  icp_fusion(const sensor_msgs:: PointCloud2ConstPtr& ros_pcd1,const sensor_
     // ros::Duration(1.0).sleep();
     icp_function(cloud_tmp, cloud_target,transformation_matrix);
     start_fusion=0;
-    }
+    
 }

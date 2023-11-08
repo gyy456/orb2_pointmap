@@ -142,8 +142,11 @@ void ImageGrabber::GrabRGBD_1(const sensor_msgs::ImageConstPtr& msgRGB,const sen
     }
 
     mpSLAM->TrackRGBD(cv_ptrRGB->image,cv_ptrD->image,cv_ptrRGB->header.stamp.toSec());
-    mpSLAM->getPointCloudMap(outputMap);
-    pointcloudpublish(*outputMap);
+    // if (outputMap->points.size()>0)
+    {   
+        mpSLAM->getPointCloudMap(outputMap);
+        pointcloudpublish(*outputMap);
+    }
     // tt.data=tt.data+1
 }
 

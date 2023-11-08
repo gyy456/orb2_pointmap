@@ -533,32 +533,32 @@ gtest/fast:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-src/icp.o: src/icp.cpp.o
+src/icp_1.o: src/icp_1.cc.o
 
-.PHONY : src/icp.o
+.PHONY : src/icp_1.o
 
 # target to build an object file
-src/icp.cpp.o:
-	$(MAKE) -f CMakeFiles/cloud_fusion.dir/build.make CMakeFiles/cloud_fusion.dir/src/icp.cpp.o
-.PHONY : src/icp.cpp.o
+src/icp_1.cc.o:
+	$(MAKE) -f CMakeFiles/cloud_fusion.dir/build.make CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o
+.PHONY : src/icp_1.cc.o
 
-src/icp.i: src/icp.cpp.i
+src/icp_1.i: src/icp_1.cc.i
 
-.PHONY : src/icp.i
+.PHONY : src/icp_1.i
 
 # target to preprocess a source file
-src/icp.cpp.i:
-	$(MAKE) -f CMakeFiles/cloud_fusion.dir/build.make CMakeFiles/cloud_fusion.dir/src/icp.cpp.i
-.PHONY : src/icp.cpp.i
+src/icp_1.cc.i:
+	$(MAKE) -f CMakeFiles/cloud_fusion.dir/build.make CMakeFiles/cloud_fusion.dir/src/icp_1.cc.i
+.PHONY : src/icp_1.cc.i
 
-src/icp.s: src/icp.cpp.s
+src/icp_1.s: src/icp_1.cc.s
 
-.PHONY : src/icp.s
+.PHONY : src/icp_1.s
 
 # target to generate assembly for a file
-src/icp.cpp.s:
-	$(MAKE) -f CMakeFiles/cloud_fusion.dir/build.make CMakeFiles/cloud_fusion.dir/src/icp.cpp.s
-.PHONY : src/icp.cpp.s
+src/icp_1.cc.s:
+	$(MAKE) -f CMakeFiles/cloud_fusion.dir/build.make CMakeFiles/cloud_fusion.dir/src/icp_1.cc.s
+.PHONY : src/icp_1.cc.s
 
 src/pose3d3d.o: src/pose3d3d.cpp.o
 
@@ -709,9 +709,9 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... src/icp.o"
-	@echo "... src/icp.i"
-	@echo "... src/icp.s"
+	@echo "... src/icp_1.o"
+	@echo "... src/icp_1.i"
+	@echo "... src/icp_1.s"
 	@echo "... src/pose3d3d.o"
 	@echo "... src/pose3d3d.i"
 	@echo "... src/pose3d3d.s"

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp.cpp" "/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/cloud_fusion.dir/src/icp.cpp.o"
+  "/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp_1.cc" "/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

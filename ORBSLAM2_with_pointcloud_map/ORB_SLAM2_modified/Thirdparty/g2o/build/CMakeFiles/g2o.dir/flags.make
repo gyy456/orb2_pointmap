@@ -3,13 +3,13 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_FLAGS =   -Wall -W -O3 -DNDEBUG -O3 -march=native -fPIC  
+C_FLAGS =   -Wall -W -O3 -DNDEBUG -O3   -fPIC  
 
 C_DEFINES = -DUNIX -Dg2o_EXPORTS
 
 C_INCLUDES = -I/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Thirdparty/g2o/core -I/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Thirdparty/g2o/types -I/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Thirdparty/g2o/stuff -I/usr/local/include/eigen3 
 
-CXX_FLAGS =   -Wall -W -O3 -DNDEBUG -O3 -march=native -fPIC  
+CXX_FLAGS =   -Wall -W -O3 -DNDEBUG -O3   -fPIC  
 
 CXX_DEFINES = -DUNIX -Dg2o_EXPORTS
 

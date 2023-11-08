@@ -467,10 +467,10 @@ Change Dir: /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_m
 Run Build Command(s):/usr/bin/make cmTC_eec0a/fast && /usr/bin/make -f CMakeFiles/cmTC_eec0a.dir/build.make CMakeFiles/cmTC_eec0a.dir/build
 make[1]: Entering directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_eec0a.dir/src.cxx.o
-/usr/bin/c++    -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX14   -std=c++14 -o CMakeFiles/cmTC_eec0a.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++    -Wall   -O3   -DCOMPILER_SUPPORTS_CXX14   -std=c++14 -o CMakeFiles/cmTC_eec0a.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTC_eec0a
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eec0a.dir/link.txt --verbose=1
-/usr/bin/c++   -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX14    -rdynamic CMakeFiles/cmTC_eec0a.dir/src.cxx.o  -o cmTC_eec0a 
+/usr/bin/c++   -Wall   -O3   -DCOMPILER_SUPPORTS_CXX14    -rdynamic CMakeFiles/cmTC_eec0a.dir/src.cxx.o  -o cmTC_eec0a 
 make[1]: Leaving directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp'
 
 
@@ -482,10 +482,10 @@ Change Dir: /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_m
 Run Build Command(s):/usr/bin/make cmTC_e06b6/fast && /usr/bin/make -f CMakeFiles/cmTC_e06b6.dir/build.make CMakeFiles/cmTC_e06b6.dir/build
 make[1]: Entering directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_e06b6.dir/src.cxx.o
-/usr/bin/c++    -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_e06b6.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++    -Wall   -O3   -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_e06b6.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTC_e06b6
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e06b6.dir/link.txt --verbose=1
-/usr/bin/c++   -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X    -rdynamic CMakeFiles/cmTC_e06b6.dir/src.cxx.o  -o cmTC_e06b6 
+/usr/bin/c++   -Wall   -O3   -DCOMPILER_SUPPORTS_CXX0X    -rdynamic CMakeFiles/cmTC_e06b6.dir/src.cxx.o  -o cmTC_e06b6 
 make[1]: Leaving directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp'
 
 
@@ -497,10 +497,10 @@ Change Dir: /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_m
 Run Build Command(s):/usr/bin/make cmTC_9f3c3/fast && /usr/bin/make -f CMakeFiles/cmTC_9f3c3.dir/build.make CMakeFiles/cmTC_9f3c3.dir/build
 make[1]: 进入目录“/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp”
 Building C object CMakeFiles/cmTC_9f3c3.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -Wall  -O3 -march=native     -o CMakeFiles/cmTC_9f3c3.dir/CheckIncludeFile.c.o   -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/usr/bin/cc   -Wall  -O3       -o CMakeFiles/cmTC_9f3c3.dir/CheckIncludeFile.c.o   -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 Linking C executable cmTC_9f3c3
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f3c3.dir/link.txt --verbose=1
-/usr/bin/cc   -Wall  -O3 -march=native      -rdynamic CMakeFiles/cmTC_9f3c3.dir/CheckIncludeFile.c.o  -o cmTC_9f3c3 
+/usr/bin/cc   -Wall  -O3        -rdynamic CMakeFiles/cmTC_9f3c3.dir/CheckIncludeFile.c.o  -o cmTC_9f3c3 
 make[1]: 离开目录“/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp”
 
 
@@ -511,10 +511,10 @@ Change Dir: /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_m
 Run Build Command(s):/usr/bin/make cmTC_879c7/fast && /usr/bin/make -f CMakeFiles/cmTC_879c7.dir/build.make CMakeFiles/cmTC_879c7.dir/build
 make[1]: 进入目录“/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp”
 Building C object CMakeFiles/cmTC_879c7.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -Wall  -O3 -march=native  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_879c7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+/usr/bin/cc   -Wall  -O3    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_879c7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
 Linking C executable cmTC_879c7
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_879c7.dir/link.txt --verbose=1
-/usr/bin/cc   -Wall  -O3 -march=native  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_879c7.dir/CheckFunctionExists.c.o  -o cmTC_879c7  -lpthread 
+/usr/bin/cc   -Wall  -O3    -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_879c7.dir/CheckFunctionExists.c.o  -o cmTC_879c7  -lpthread 
 make[1]: 离开目录“/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/build/CMakeFiles/CMakeTmp”
 
 

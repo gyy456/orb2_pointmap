@@ -858,7 +858,7 @@ USERCONFIG:FILEPATH=USERCONFIG-NOTFOUND
 VTK_DIR:PATH=/usr/lib/cmake/vtk-7.1
 
 //Path to a file.
-_file_name:FILEPATH=/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp.cpp
+_file_name:FILEPATH=/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp_1.cc
 
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h

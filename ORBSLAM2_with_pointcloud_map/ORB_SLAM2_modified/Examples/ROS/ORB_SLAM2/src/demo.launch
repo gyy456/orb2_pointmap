@@ -1,0 +1,3 @@
+<launch>
+  <node name="RGBD" pkg="ORB_SLAM2" type="RGBD" args="/home/gyy/Downloads/orb2/ORB_SLAM2/Vocabulary/ORBvoc.txt /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/RGB-D/TUM1.yaml"/>
+</launch>

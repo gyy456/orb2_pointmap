@@ -1,0 +1,6 @@
+<launch>
+  <node name="demo" pkg="rosbag" type="play" args="--pause /home/gyy/Downloads/data/20230922_165939.bag">
+    <remap from="device_0/sensor_1/Color_0/image/data" to="/jackal0/front/image_raw"/>
+    <remap from="device_0/sensor_0/Depth_0/image/data" to="/jackal0/front/depth/image_raw"/>
+  </node>
+</launch>

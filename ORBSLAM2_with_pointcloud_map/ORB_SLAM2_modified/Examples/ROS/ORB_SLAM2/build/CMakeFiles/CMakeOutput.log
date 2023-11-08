@@ -495,10 +495,10 @@ Change Dir: /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_m
 Run Build Command(s):/usr/bin/make cmTC_63ead/fast && /usr/bin/make -f CMakeFiles/cmTC_63ead.dir/build.make CMakeFiles/cmTC_63ead.dir/build
 make[1]: Entering directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_63ead.dir/src.cxx.o
-/usr/bin/c++    -Wall  -O3 -march=native -DCOMPILER_SUPPORTS_CXX14   -std=c++14 -o CMakeFiles/cmTC_63ead.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++    -Wall  -O3   -DCOMPILER_SUPPORTS_CXX14   -std=c++14 -o CMakeFiles/cmTC_63ead.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTC_63ead
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63ead.dir/link.txt --verbose=1
-/usr/bin/c++   -Wall  -O3 -march=native -DCOMPILER_SUPPORTS_CXX14    -rdynamic CMakeFiles/cmTC_63ead.dir/src.cxx.o  -o cmTC_63ead 
+/usr/bin/c++   -Wall  -O3   -DCOMPILER_SUPPORTS_CXX14    -rdynamic CMakeFiles/cmTC_63ead.dir/src.cxx.o  -o cmTC_63ead 
 make[1]: Leaving directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp'
 
 
@@ -510,10 +510,10 @@ Change Dir: /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_m
 Run Build Command(s):/usr/bin/make cmTC_4e5fd/fast && /usr/bin/make -f CMakeFiles/cmTC_4e5fd.dir/build.make CMakeFiles/cmTC_4e5fd.dir/build
 make[1]: Entering directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_4e5fd.dir/src.cxx.o
-/usr/bin/c++    -Wall  -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_4e5fd.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++    -Wall  -O3   -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_4e5fd.dir/src.cxx.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTC_4e5fd
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e5fd.dir/link.txt --verbose=1
-/usr/bin/c++   -Wall  -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X    -rdynamic CMakeFiles/cmTC_4e5fd.dir/src.cxx.o  -o cmTC_4e5fd 
+/usr/bin/c++   -Wall  -O3   -DCOMPILER_SUPPORTS_CXX0X    -rdynamic CMakeFiles/cmTC_4e5fd.dir/src.cxx.o  -o cmTC_4e5fd 
 make[1]: Leaving directory '/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles/CMakeTmp'
 
 

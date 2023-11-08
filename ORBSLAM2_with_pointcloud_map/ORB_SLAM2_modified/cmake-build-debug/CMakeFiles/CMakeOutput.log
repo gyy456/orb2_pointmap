@@ -559,10 +559,10 @@ Run Build Command:"/usr/bin/make" "cmTC_fb5c7/fast"
 /usr/bin/make -f CMakeFiles/cmTC_fb5c7.dir/build.make CMakeFiles/cmTC_fb5c7.dir/build
 make[1]: Entering directory '/home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_fb5c7.dir/src.cxx.o
-/usr/bin/c++     -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_fb5c7.dir/src.cxx.o -c /home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++     -Wall   -O3   -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_fb5c7.dir/src.cxx.o -c /home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTC_fb5c7
 /home/jackey/Downloads/clion-2016.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb5c7.dir/link.txt --verbose=1
-/usr/bin/c++    -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTC_fb5c7.dir/src.cxx.o  -o cmTC_fb5c7 -rdynamic 
+/usr/bin/c++    -Wall   -O3   -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTC_fb5c7.dir/src.cxx.o  -o cmTC_fb5c7 -rdynamic 
 make[1]: Leaving directory '/home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -574,10 +574,10 @@ Run Build Command:"/usr/bin/make" "cmTC_1e28f/fast"
 /usr/bin/make -f CMakeFiles/cmTC_1e28f.dir/build.make CMakeFiles/cmTC_1e28f.dir/build
 make[1]: Entering directory '/home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_1e28f.dir/src.cxx.o
-/usr/bin/c++     -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_1e28f.dir/src.cxx.o -c /home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+/usr/bin/c++     -Wall   -O3   -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_1e28f.dir/src.cxx.o -c /home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
 Linking CXX executable cmTC_1e28f
 /home/jackey/Downloads/clion-2016.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e28f.dir/link.txt --verbose=1
-/usr/bin/c++    -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTC_1e28f.dir/src.cxx.o  -o cmTC_1e28f -rdynamic 
+/usr/bin/c++    -Wall   -O3   -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTC_1e28f.dir/src.cxx.o  -o cmTC_1e28f -rdynamic 
 make[1]: Leaving directory '/home/jackey/install/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 Source file was:

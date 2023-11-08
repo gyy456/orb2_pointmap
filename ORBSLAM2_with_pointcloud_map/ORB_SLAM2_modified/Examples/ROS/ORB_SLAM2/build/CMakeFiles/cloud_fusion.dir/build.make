@@ -57,82 +57,82 @@ include CMakeFiles/cloud_fusion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cloud_fusion.dir/flags.make
 
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: CMakeFiles/cloud_fusion.dir/flags.make
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: ../src/icp.cpp
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: ../manifest.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/cpp_common/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rostime/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roscpp_traits/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roscpp_serialization/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/catkin/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/genmsg/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/genpy/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/message_runtime/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/gencpp/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/geneus/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/gennodejs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/genlisp/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/message_generation/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosbuild/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosconsole/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/std_msgs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosgraph_msgs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/xmlrpcpp/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roscpp/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/geometry_msgs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/message_filters/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosgraph/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosclean/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/ros_environment/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rospack/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roslib/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosmaster/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosout/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosparam/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosunit/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roslaunch/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rospy/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/topic_tools/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/pluginlib/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roslz4/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosbag_storage/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/std_srvs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosbag/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rostopic/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosnode/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosmsg/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rosservice/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/roswtf/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/sensor_msgs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/actionlib_msgs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/rostest/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/actionlib/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/tf2_msgs/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/tf2/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/tf2_py/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/tf2_ros/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/tf/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/image_transport/package.xml
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.o: /opt/ros/noetic/share/cv_bridge/package.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cloud_fusion.dir/src/icp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cloud_fusion.dir/src/icp.cpp.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp.cpp
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: CMakeFiles/cloud_fusion.dir/flags.make
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: ../src/icp_1.cc
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: ../manifest.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/cpp_common/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rostime/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roscpp_traits/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roscpp_serialization/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/catkin/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/genmsg/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/genpy/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/message_runtime/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/gencpp/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/geneus/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/gennodejs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/genlisp/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/message_generation/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosbuild/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosconsole/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/std_msgs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosgraph_msgs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/xmlrpcpp/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roscpp/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/geometry_msgs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/message_filters/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosgraph/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosclean/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/ros_environment/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rospack/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roslib/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosmaster/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosout/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosparam/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosunit/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roslaunch/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rospy/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/topic_tools/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/pluginlib/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roslz4/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosbag_storage/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/std_srvs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosbag/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rostopic/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosnode/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosmsg/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rosservice/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/roswtf/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/sensor_msgs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/actionlib_msgs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/rostest/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/actionlib/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/tf2_msgs/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/tf2/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/tf2_py/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/tf2_ros/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/tf/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/image_transport/package.xml
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o: /opt/ros/noetic/share/cv_bridge/package.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o -c /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp_1.cc
 
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cloud_fusion.dir/src/icp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp.cpp > CMakeFiles/cloud_fusion.dir/src/icp.cpp.i
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cloud_fusion.dir/src/icp_1.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp_1.cc > CMakeFiles/cloud_fusion.dir/src/icp_1.cc.i
 
-CMakeFiles/cloud_fusion.dir/src/icp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cloud_fusion.dir/src/icp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp.cpp -o CMakeFiles/cloud_fusion.dir/src/icp.cpp.s
+CMakeFiles/cloud_fusion.dir/src/icp_1.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cloud_fusion.dir/src/icp_1.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gyy/Downloads/orb_map/ORBSLAM2_with_pointcloud_map/ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src/icp_1.cc -o CMakeFiles/cloud_fusion.dir/src/icp_1.cc.s
 
 # Object files for target cloud_fusion
 cloud_fusion_OBJECTS = \
-"CMakeFiles/cloud_fusion.dir/src/icp.cpp.o"
+"CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o"
 
 # External object files for target cloud_fusion
 cloud_fusion_EXTERNAL_OBJECTS =
 
-../cloud_fusion: CMakeFiles/cloud_fusion.dir/src/icp.cpp.o
+../cloud_fusion: CMakeFiles/cloud_fusion.dir/src/icp_1.cc.o
 ../cloud_fusion: CMakeFiles/cloud_fusion.dir/build.make
 ../cloud_fusion: /usr/local/lib/libopencv_dnn.so.3.4.15
 ../cloud_fusion: /usr/local/lib/libopencv_highgui.so.3.4.15

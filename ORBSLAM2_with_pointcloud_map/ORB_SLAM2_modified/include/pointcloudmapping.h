@@ -42,6 +42,9 @@ public:
     void shutdown();
     void viewer();
     void getGlobalCloudMap(pcl::PointCloud<pcl::PointXYZRGBA> ::Ptr &outputMap);
+    // void RadiusOutlierFilter(const pcl::PointCloud<pcl::PointXYZRGBA>::Ptr &pcd_cloud0,const pcl::PointCloud<pcl::PointXYZRGBA>::Ptr &cloud_after_Radius,const double &radius, const int &thre_count)；
+    // void cloud_filter(const pcl::PointCloud<pcl::PointXYZRGBA>::Ptr& cloud_source )；
+                         
 protected:
     PointCloud::Ptr generatePointCloud(KeyFrame* kf, cv::Mat& color, cv::Mat& depth);
     
@@ -62,7 +65,7 @@ protected:
     mutex                   keyframeMutex;
     uint16_t                lastKeyframeSize =0;
     
-    double resolution = 0.04;
+    double resolution = 100;
     pcl::VoxelGrid<PointT>  voxel;
 };
 
