@@ -6,7 +6,7 @@
 进入到orb_modified 文件夹下 对项目进行编译 ./build.sh 编译完成后 再对ros版本进行编译 ./build_ros.sh
 
 运行demo：
-运行已经录好的rosbag进行测试
+运行已经录好的rosbag进行测试 rosbag的压缩包在orb2_pointcloud_map/ORBSLAM2_with_pointcloud_map
 rosbag play --pause 20230925_103016.bag device_0/sensor_1/Color_0/image/data:=/jackal0//front/image_raw /device_0/sensor_0/Depth_0/image/data:=/jackal0/front/depth/image_raw
 进入 cd ORB_SLAM2_modified/Examples/ROS/ORB_SLAM2/src
 roslaunch demo.launch
